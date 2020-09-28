@@ -21,12 +21,21 @@
     <ClInclude Include="SimonSays.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="Rooster.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Student.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C++Basic.cpp">
+    <ClCompile Include="Rooster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SimonSays.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
