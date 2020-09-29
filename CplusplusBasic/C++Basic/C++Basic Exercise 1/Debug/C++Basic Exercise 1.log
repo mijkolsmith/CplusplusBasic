@@ -1,0 +1,47 @@
+﻿  pch.cpp
+  Rooster.cpp
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(5): error C2061: syntax error: identifier 'StudentType'
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(7): error C2065: 'studentType': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(8): error C2050: switch expression not integral
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(9): error C2065: 'GDEV': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(9): error C2131: expression did not evaluate to a constant
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(9): note: a non-constant (sub-)expression was encountered
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(11): error C2065: 'GDES': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(11): error C2131: expression did not evaluate to a constant
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(11): note: a non-constant (sub-)expression was encountered
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(13): error C2065: 'GART': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(13): error C2131: expression did not evaluate to a constant
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(13): note: a non-constant (sub-)expression was encountered
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(15): error C2065: 'IDES': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(15): error C2131: expression did not evaluate to a constant
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(15): note: a non-constant (sub-)expression was encountered
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(17): error C2059: syntax error: '}'
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(9): error C2051: case expression not constant
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(11): error C2051: case expression not constant
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(13): error C2051: case expression not constant
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(15): error C2051: case expression not constant
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(17): warning C4060: switch statement contains no 'case' or 'default' labels
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(4): error C2061: syntax error: identifier 'StudentType'
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(9): error C3646: 'getStudentType': unknown override specifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(9): error C2059: syntax error: '('
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(10): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(14): error C3646: 'studentType': unknown override specifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(14): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(6): error C2065: 'studentType': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(6): error C2065: '_studentType': undeclared identifier
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(16): error C2664: 'StudentWithType::StudentWithType(StudentWithType &&)': cannot convert argument 1 from 'StudentType' to 'const StudentWithType &'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(16): note: Reason: cannot convert from 'StudentType' to 'const StudentWithType'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(16): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(17): error C2664: 'StudentWithType::StudentWithType(StudentWithType &&)': cannot convert argument 1 from 'StudentType' to 'const StudentWithType &'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(17): note: Reason: cannot convert from 'StudentType' to 'const StudentWithType'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(17): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(18): error C2664: 'StudentWithType::StudentWithType(StudentWithType &&)': cannot convert argument 1 from 'StudentType' to 'const StudentWithType &'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(18): note: Reason: cannot convert from 'StudentType' to 'const StudentWithType'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(18): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(19): error C2664: 'StudentWithType::StudentWithType(StudentWithType &&)': cannot convert argument 1 from 'StudentType' to 'const StudentWithType &'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(19): note: Reason: cannot convert from 'StudentType' to 'const StudentWithType'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(19): note: No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(22): error C2039: 'getStudentType': is not a member of 'StudentWithType'
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\studentwithtype.h(1): note: see declaration of 'StudentWithType'
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.cpp(22): error C2660: 'Rooster::getRooster': function does not take 1 arguments
+  c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(5): note: see declaration of 'Rooster::getRooster'

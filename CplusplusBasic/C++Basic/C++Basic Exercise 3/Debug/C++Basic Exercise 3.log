@@ -1,0 +1,4 @@
+﻿  pch.cpp
+  C++Basic Exercise 3.cpp
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 3\c++basic exercise 3.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  C++Basic Exercise 3.vcxproj -> C:\Users\Michael\Documents\CplusplusBasic\CplusplusBasic\C++Basic\Debug\C++Basic Exercise 3.exe
