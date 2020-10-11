@@ -1,0 +1,5 @@
+﻿  C++Basic Exercise 4.cpp
+  Coin.cpp
+  Generating Code...
+C++Basic Exercise 4.obj : error LNK2019: unresolved external symbol "public: int __thiscall Coin::getWorth(void)" (?getWorth@Coin@@QAEHXZ) referenced in function "public: void __thiscall CoffeeMachine::PayCoffee(void)" (?PayCoffee@CoffeeMachine@@QAEXXZ)
+C:\Users\Michael\Documents\CplusplusBasic\CplusplusBasic\C++Basic\Debug\C++Basic Exercise 4.exe : fatal error LNK1120: 1 unresolved externals

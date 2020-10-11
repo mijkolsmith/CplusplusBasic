@@ -10,9 +10,8 @@ class Leraar : public Persoon
 private:
 	int coolheid;
 public:
-	Leraar(int _leeftijd, std::string _naam, int _coolheid)
+	Leraar(int _leeftijd, std::string _naam, int _coolheid) : Persoon(_leeftijd, _naam)
 	{
-		Persoon meTemp(_leeftijd, _naam);
 		coolheid = _coolheid;
 	}
 

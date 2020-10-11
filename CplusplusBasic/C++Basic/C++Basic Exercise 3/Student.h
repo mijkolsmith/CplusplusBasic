@@ -11,10 +11,9 @@ private:
 	Punt puntVoorCPPBasic;
 	int slimheid;
 public:
-	Student(int _leeftijd, std::string _naam, Punt _punt, int _slimheid)
+	Student(int _leeftijd, std::string _naam, Punt _punt, int _slimheid) : Persoon(_leeftijd, _naam)
 	{
 		puntVoorCPPBasic = _punt;
-		Persoon meTemp(_leeftijd, _naam);
 		slimheid = _slimheid;
 	}
 	void becomeSlimmer(int _aantal)
