@@ -8,7 +8,13 @@ private:
 	std::vector<Boek*> boeken;
 public:
 	Bibliotheek();
-	void addBoek(Boek* _boek);
+	Bibliotheek(const Bibliotheek& b);
+	void addBoek(Boek* _boek)
+	{
+		boeken.insert(boeken.end(), _boek);
+	}
 	void leenBoek(Boek* _boek);
 	void returnBoek(Boek* _boek);
+	Bibliotheek& operator=(const Bibliotheek& b);
+	~Bibliotheek();
 };

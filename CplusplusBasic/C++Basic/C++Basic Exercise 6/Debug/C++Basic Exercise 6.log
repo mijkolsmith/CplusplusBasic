@@ -1,0 +1,7 @@
+﻿  C++Basic Exercise 6.cpp
+  Caravan.cpp
+  Koffer.cpp
+  Sok.cpp
+  Generating Code...
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 6\koffer.cpp(41): warning C4715: 'Koffer::getSok': not all control paths return a value
+  C++Basic Exercise 6.vcxproj -> C:\Users\Michael\Documents\CplusplusBasic\CplusplusBasic\C++Basic\Debug\C++Basic Exercise 6.exe

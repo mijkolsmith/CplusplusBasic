@@ -1,0 +1,129 @@
+Vandaag
+Memory-management in C++
+- copy-by-value vs. copy-by-reference
+- stack vs. heap
+- pointers vs. references
+- The Big Three: destructor, copy-constructor, assignment-operator
+adembenemende animaties!
+Pass-by-value vs. Pass-by-reference
+
+main()
+nu met de functie…
+doeGoocheltruc() heet nu even f()...
+f(){ }
+main()
+f(){ }
+main()
+C++ is een pass-by-value taal
+parameters zijn dus altijd een kopie
+behalve...
+References
+Door references te gebruiken kun je voorkomen dat C++ een kopie maakt van
+parameters die je aan een methode meegeeft.
+Een reference is een verwijzing naar het originele object
+void doeGoocheltruc(HogeHoed hh); //copie!
+void doeGoocheltruc(HogeHoed& hh); //origineel!
+Stack vs. heap
+
+Objecten aanmaken: stack vs. heap
+stack: 'automatisch' (automatic allocation)
+HogeHoed hh = HogeHoed();
+is 't makkelijkst - wordt automatisch opgeruimd
+zorg dat er goeie copy-constructors (en meer…) zijn!
+heap: 'handmatig' (dynamic allocation)
+HogeHoed* hh = new HogeHoed();
+is 't flexibelst & snelst - wordt NIET automatisch opgeruimd
+geen problemen met kopiëren
+HogeHoed h;
+h
+HogeHoed h2;
+HogeHoed h3; h2
+h3
+Objecten op de heap: pointers
+Een pointer is een verwijzing naar een object - het adres, niet het object zelf!
+Bevat dus ook niet de methodes & attributen van 't object.
+Om methodes aan te roepen: eerst van de pointer, het bijbehorende object
+zoeken: met "->"
+HogeHoed* h;
+h = new HogeHoed();
+h->inhoud(); // in plaats van hh.inhoud()
+hh HogeHoed* hh;
+hh = new HogeHoed();
+hh->inhoud();
+HogeHoed*
+delete hh;
+Opdracht
+Maak een tragische bibliotheek met 1 boek.
+- maak een Bibliotheek class en een Boek class
+- maak de Bibliotheek en het Boek aan op de heap
+- maak het mogelijk dat een Boek uitgeleend wordt (maak een leenUit())
+- maak het mogelijk dat het Boek weer teruggegeven wordt
+Denk er aan om dingen weer op te ruimen...
+
+"rule-of-three"
+Als je object zelf objecten (resources) op de heap aanmaakt, MOET je de "big
+three" implementeren:
+- een destructor:
+MyClass::~MyClass()
+- een copy constructor
+MyClass::MyClass(const MyClass& c)
+- een assignment operator:
+MyClass& MyClass::operator=(const MyClass& c)
+In deze methodes ruim je de resources weer op (destructor), en zorg je voor deep
+copies (copy-constructor en assignment-operator)
+
+Destructor
+- Alle classes hebben een constructor nodig
+om object aan te maken
+- Alle classes hebben ook een destructor nodig
+om object op te ruimen - meestal het omgekeerde van de constructor
+Als je geen destructor schrijft, maakt de compiler er eentje voor je aan - die doet
+niet genoeg: als je pointers gebruikt hebt, moet je zelf geheugen weer vrijgeven,
+anders krijg je memory-leaks!
+gaat niet automatisch zoals bij de stack!
+Weggooien gaat met delete: delete myObjectPtr;
+
+Copy-constructor
+Is een constructor, dus maakt een nieuw object aan
+Basis voor het nieuwe object: een bestaand object
+Standaard copy-constructor die de compiler maakt doet een shallow copy
+Als je zelf pointers gebruikt: zelf deep copy implementeren
+Bescherm jezelf tegen self-assignment!
+shallow copy vs. deep copy
+Parent
+Child
+pointer naar Child
+Parent
+Child
+pointer naar Child
+Parent (copie)
+pointer naar Child
+shallow copy: beide parents hebben dezelfde pointer,
+naar hetzelfde Child!
+copy
+shallow copy vs. deep copy
+Parent
+Child
+pointer naar Child
+Parent
+Child
+pointer naar Child
+Parent (copie)
+pointer naar Child
+deep copy: beide parents hebben eigen pointer, naar
+eigen (gekopieerd) Child!
+copy Parent
+Child
+pointer naar Child
+copy
+Child
+(copie)
+
+Assignment-operator
+Wijst waardes van een bestaand object toe aan een nieuw object
+Dus geen constructor! Er wordt geen nieuw object aangemaakt!
+Ook hier: de compiler maakt standaard een shallow copy, dus als je met pointers
+werkt zelf een deep copy implementeren!
+Bovendien: als je object al een pointer naar een ander object bevat, deze eerst
+deleten - anders krijg je memory leaks…
+En bescherm je tegen self-assignment...

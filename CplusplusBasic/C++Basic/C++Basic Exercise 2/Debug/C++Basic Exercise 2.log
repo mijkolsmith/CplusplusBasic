@@ -1,3 +1,4 @@
-﻿  SimonSays.cpp
-c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 2\simonsays.cpp(24): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+﻿  pch.cpp
+  SimonSays.cpp
+c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 2\simonsays.cpp(23): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
   C++Basic Exercise 2.vcxproj -> C:\Users\Michael\Documents\CplusplusBasic\CplusplusBasic\C++Basic\Debug\C++Basic Exercise 2.exe

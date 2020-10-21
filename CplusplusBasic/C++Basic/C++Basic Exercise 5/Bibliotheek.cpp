@@ -1,13 +1,13 @@
 #include "pch.h"
 #include "Bibliotheek.h"
 
-Bibliotheek::Bibliotheek()
-{
-}
+Bibliotheek::Bibliotheek() {}
 
-void Bibliotheek::addBoek(Boek* _boek)
+Bibliotheek::Bibliotheek(const Bibliotheek& b)
 {
-	boeken.insert(boeken.end(), _boek);
+	if (this == &b) return;
+	boeken[0] = new Boek(*b.boeken[0]);
+	return;
 }
 
 void Bibliotheek::leenBoek(Boek* _boek)
@@ -34,4 +34,17 @@ void Bibliotheek::returnBoek(Boek * _boek)
 		std::cout << _boek->getName() << " is al teruggebracht.\n";
 		system("pause");
 	}
+}
+
+Bibliotheek & Bibliotheek::operator=(const Bibliotheek & b)
+{
+	if (this == &b) return *this;
+	delete boeken[0];
+	boeken[0] = new Boek(*b.boeken[0]);
+	return *this;
+}
+
+Bibliotheek::~Bibliotheek()
+{
+	delete boeken[0];
 }

@@ -1,4 +1,5 @@
-﻿  Rooster.cpp
+﻿  pch.cpp
+  Rooster.cpp
 c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(5): error C2061: syntax error: identifier 'StudentType'
 c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(7): error C2065: 'studentType': undeclared identifier
 c:\users\michael\documents\cplusplusbasic\cplusplusbasic\c++basic\c++basic exercise 1\rooster.h(8): error C2050: switch expression not integral
